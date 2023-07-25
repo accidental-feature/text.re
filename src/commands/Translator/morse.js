@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder } = require('@discordjs/builders');
+const { SlashCommandBuilder } = require('@discordjs/builders');
 
 const morseCode = {
 	"A": ".-",
@@ -35,18 +35,16 @@ module.exports = {
 	.addStringOption(option => option
 		.setName('text')
 		.setDescription('The text to convert to morse code.')
-		.setMaxLength(280)
 		.setRequired(true)
 	),
 	async execute(interaction) {
 		const text = interaction.options.getString('text');
-		
+
 		// Converts text to morse code
 		const morseText = text.toUpperCase().split("").map(letter => {
       return morseCode[letter] ? morseCode[letter] : letter;
    	}).join("");
 
-		console.log(morseText);
 		interaction.reply({ content: morseText });
 	}
 }

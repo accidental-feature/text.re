@@ -20,7 +20,7 @@ module.exports = {
 		const text = interaction.options.getString('text');
 
 		interaction.reply(
-			text.replace([A-Za-z0-9], char => {
+			text.replace(/./g, char => {
 				if (map[char.toLowerCase()]){
 					return char === char.toUpperCase() ? map[char.toLowerCase()] : map[char];
 				};

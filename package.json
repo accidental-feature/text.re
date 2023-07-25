@@ -1,25 +1,27 @@
 {
-  "name": "text.re",
-  "version": "1.0.0",
-  "description": "Turn text into Morse code, Small Caps, Superscript, or Subscript.",
+  "name": "mothman",
+  "version": "1.5.0",
+  "description": "Utility Discord Bot for BGE",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "discord",
-    "bot",
-    "text-generator"
-  ],
   "author": "Kilgamesh",
   "license": "MIT",
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
+  "private": true,
   "dependencies": {
     "@discordjs/builders": "^1.6.3",
     "@discordjs/rest": "^1.7.1",
+    "axios": "^1.4.0",
     "discord.js": "^14.11.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.3.4",
+    "openai": "^3.3.0",
+    "superagent": "^8.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "dev": "nodemon .",
+    "start": "node ."
   }
 }
