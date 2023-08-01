@@ -37,7 +37,7 @@ module.exports = {
 	.setDescription('Converts text to subscript.')
 	.addStringOption(option => option
 		.setName('text')
-		.setDescription('The text to convert to subscript.')
+		.setDescription('Cₒₙvₑᵣₜₛ ₜₑxₜ ₜₒ ₛubₛcᵣᵢₚₜ.')
 		.setMaxLength(280)
 		.setRequired(true)
 	),

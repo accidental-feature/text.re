@@ -17,7 +17,7 @@ const cursiveMap = {
 module.exports = {
 	data: new SlashCommandBuilder()
 	.setName('text2cursive')
-	.setDescription('Converts text to cursive styled text.')
+	.setDescription('𝓒𝓸𝓷𝓿𝓮𝓻𝓽𝓼 𝓽𝓮𝔁𝓽 𝓽𝓸 𝓬𝓾𝓻𝓼𝓲𝓿𝓮 𝓼𝓽𝔂𝓵𝓮𝓭 𝓽𝓮𝔁𝓽.')
 	.addStringOption(option => option
 		.setName('text')
 		.setDescription('The text to convert to cursive.')

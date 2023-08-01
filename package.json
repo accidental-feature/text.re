@@ -1,6 +1,6 @@
 {
   "name": "mothman",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Utility Discord Bot for BGE",
   "main": "src/index.js",
   "author": "Kilgamesh",

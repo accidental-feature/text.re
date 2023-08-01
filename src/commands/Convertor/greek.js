@@ -9,7 +9,7 @@ const map = {
 module.exports = {
 	data: new SlashCommandBuilder()
 	.setName('text2greek')
-	.setDescription('Converts text to greek.')
+	.setDescription('cθηvεπτs τεχτ τθ gπεεκ.')
 	.addStringOption(option => option
 		.setName('text')
 		.setDescription('The text to convert to greek.')
