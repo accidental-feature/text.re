@@ -25,6 +25,13 @@ module.exports = (client) => {
 				console.log('Started refreshing application (/) commands.');
 
 				await rest.put(
+					// Deletes all global commands
+					Routes.applicationCommands(process.env.BOT_ID), {
+						body: []
+					},
+				);
+
+				await rest.put(
 					// Global **Only use once or will have to delete all (body: [])**
 					Routes.applicationCommands(process.env.BOT_ID), {
 						body: client.commandArray

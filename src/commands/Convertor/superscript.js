@@ -46,7 +46,7 @@ const superscriptMap = {
 module.exports = {
 	data: new SlashCommandBuilder()
 	.setName('text2super')
-	.setDescription('Converts text to superscript.')
+	.setDescription('Cᵒⁿᵛᵉʳᵗˢ ᵗᵉˣᵗ ᵗᵒ ˢᵘᵖᵉʳˢᶜʳⁱᵖᵗ.')
 	.addStringOption(option => option
 		.setName('text')
 		.setDescription('The text to convert to superscript.')

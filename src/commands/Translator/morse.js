@@ -34,7 +34,7 @@ module.exports = {
 	.setDescription('Converts text to morse code.')
 	.addStringOption(option => option
 		.setName('text')
-		.setDescription('The text to convert to morse code.')
+		.setDescription('Convert text to morse code.')
 		.setRequired(true)
 	),
 	async execute(interaction) {
