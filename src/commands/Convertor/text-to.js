@@ -117,6 +117,7 @@ const smallCapsMap = {
 module.exports = {
 	data: new SlashCommandBuilder()
 	.setName('text-to')
+	.setDescription('Create cool text.')
 	.addSubcommand(command => command
 		.setName('superscript')
 		.setDescription('Cᵒⁿᵛᵉʳᵗˢ ᵗᵉˣᵗ ᵗᵒ ˢᵘᵖᵉʳˢᶜʳⁱᵖᵗ.')
