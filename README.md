@@ -19,6 +19,8 @@
 - Whether you're a student, a self-taught programmer, new to making discord bots, or simply curious about open source, everyone is welcome to contribute.
 - You don't need to be an experienced discord bot developer to get started. There are many ways you can help improve Text:re.
 
+### [Contribution Docs](./CONTRIBUTING.md)
+
 ### You can contribute by
 
 * Improving the documentation. Some examples include:
@@ -30,6 +32,7 @@
 * Refactoring existing code
 * Adding comments to existing code
 * Reporting or squashing any [bugs](https://github.com/Kilgamesh/text.re/issues)
+
 
 ## Contributors
 
