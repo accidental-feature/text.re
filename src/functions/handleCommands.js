@@ -23,19 +23,31 @@ module.exports = (client) => {
 		(async () => {
 			try {
 				console.log('Started refreshing application (/) commands.');
-
+				
+				/* 	Deletes all global commands */
 				await rest.put(
-					// Deletes all global commands
 					Routes.applicationCommands(process.env.BOT_ID), {
 						body: []
 					},
 				);
+
+				/* 	Deletes all guild commands */
+				// await rest.put(
+				// 	Routes.applicationGuildCommands(process.env.BOT_ID, process.env.GUILD_ID), {
+				// 		body: []
+				// 	},
+				// );
 
 				await rest.put(
 					// Global **Only use once or will have to delete all (body: [])**
 					Routes.applicationCommands(process.env.BOT_ID), {
 						body: client.commandArray
 					},
+					// Testing Commands on Guild
+					// Routes.applicationGuildCommands(process.env.BOT_ID, process.env.GUILD_ID), {
+					// 	body: client.commandArray
+					// },
+
 				);
 
 				console.log('Successfully reloaded application (/) commands.');
