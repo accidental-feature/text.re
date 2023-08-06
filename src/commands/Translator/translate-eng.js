@@ -84,7 +84,7 @@ module.exports = {
 			headers: {
 				'content-type': 'application/x-www-form-urlencoded',
 				'Accept-Encoding': 'application/gzip',
-				'X-RapidAPI-Key': 'c27bf97ad2msh0b7ad169b1076e7p1d7124jsnfc8ca009c726',
+				'X-RapidAPI-Key': process.env.RAPID_API_KEY,
 				'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
 			},
 			data: encodedParams,
