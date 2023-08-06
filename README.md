@@ -1,9 +1,9 @@
-<h1 align="center" style='text-align:center;display:flex;flex-flow:column;align-items:center;gap:10px'>
-	<img style='height:100px;width:100px;text-align:center' src='./icon.png' alt='textre logo icon' />
+<h1 align="center" style='text-align:center;'>
+	<p align="center">
+		<img style='height:100px;width:100px;margin-bottom:5px' src='./icon.png' alt='textre logo icon' />
+	</p>
 	Text:re Discord Bot
 </h1>
-
-
 
 ## About Text.re
 
