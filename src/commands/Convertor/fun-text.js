@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const { SlashCommandBuilder } = require('discord.js');
 
 const superscriptMap = {
 	'0': '⁰',
@@ -116,7 +116,7 @@ const smallCapsMap = {
 
 module.exports = {
 	data: new SlashCommandBuilder()
-	.setName('text-to')
+	.setName('fun-text')
 	.setDescription('Create cool text.')
 	.addSubcommand(command => command
 		.setName('superscript')
