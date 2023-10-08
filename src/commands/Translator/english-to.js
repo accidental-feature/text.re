@@ -1,14 +1,13 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
-const { EmbedBuilder } = require('discord.js')
+const { EmbedBuilder, SlashCommandBuilder } = require('discord.js')
 const axios = require('axios');
 
 
 module.exports = {
 	data: new SlashCommandBuilder()
-	.setName('translate-eng')
+	.setName('english-to')
 	.setDescription('Translates english text into other languages.')
 	.addSubcommand(command => command
-		.setName('to-spanish')
+		.setName('spanish')
 		.setDescription('Translates text to spanish.')
 		.addStringOption(option => option
 			.setName('text')
@@ -17,7 +16,7 @@ module.exports = {
 		)
 	)
 	.addSubcommand(command => command
-		.setName('to-german')
+		.setName('german')
 		.setDescription('Translates text to german.')
 		.addStringOption(option => option
 			.setName('text')
@@ -26,7 +25,7 @@ module.exports = {
 		)
 	)
 	.addSubcommand(command => command
-		.setName('to-french')
+		.setName('french')
 		.setDescription('Translates text to french.')
 		.addStringOption(option => option
 			.setName('text')
@@ -35,7 +34,7 @@ module.exports = {
 		)
 	)
 	.addSubcommand(command => command
-		.setName('to-japanese')
+		.setName('japanese')
 		.setDescription('Translates text to japanese.')
 		.addStringOption(option => option
 			.setName('text')
@@ -94,7 +93,7 @@ module.exports = {
 			const response = await axios.request(options);
 			const embed = new EmbedBuilder()
 			.setTitle('Translation')
-			.setColor('#ffd7f0')
+			.setColor('#0099ff')
 			.addFields(
 				{name: 'Original Text:', value: text, inline: false},
 				{

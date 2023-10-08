@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const { SlashCommandBuilder } = require('discord.js');
 
 const morseCode = {
 	"A": ".-",
@@ -30,7 +30,7 @@ const morseCode = {
 
 module.exports = {
 	data: new SlashCommandBuilder()
-	.setName('text2morse')
+	.setName('morse')
 	.setDescription('Converts text to morse code.')
 	.addStringOption(option => option
 		.setName('text')
