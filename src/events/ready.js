@@ -7,9 +7,9 @@ module.exports = {
 		// Sets status to random option from array
 		(async() => {
 			const statusArray = [ 
-				'/text2greek',
-				'/text2morse',
-				'/text2subscript',
+				'/fun-text',
+				'/english-to',
+				'/piglatin',
 			];
 			const option = Math.floor(Math.random() * statusArray.length);
 
